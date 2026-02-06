@@ -1,0 +1,56 @@
+{
+  "Resumo Semana 3: Investimento em Valor": {
+    "Princípios e Fundamentos": {
+      "Investimento vs. Especulação": {
+        "Segurança do principal": "Um investimento real, após análise minuciosa, deve garantir que o capital inicial investido não seja perdido de forma permanente. Graham diferencia o investidor do especulador pelo foco na preservação do valor em vez da aposta em flutuações de preços.",
+        "Retorno satisfatório": "Diferente de buscar 'jackpots' de loteria, o investidor inteligente busca um lucro razoável e adequado com base em fatos e lógica. Graham define retorno satisfatório como aquele que o investidor está disposto a aceitar, desde que aja com inteligência e prudência."
+      },
+      "Margem de Segurança": {
+        "Preço abaixo do valor intrínseco": "É o conceito de comprar um ativo por um valor significativamente menor do que seu valor real ou intrínseco para mitigar riscos de erros de cálculo ou azar. Graham descreve isso como comprar uma nota de 1 dólar por apenas 50 centavos, criando um amortecedor contra a volatilidade."
+      },
+      "Senhor Mercado": {
+        "Aproveitar volatilidade emocional": "Metáfora de um sócio maníaco-depressivo que oferece preços absurdos diariamente, ora por euforia, ora por pânico. O investidor deve usar o Sr. Mercado como um servo, comprando dele quando ele está pessimista e vendendo para ele quando ele está eufórico."
+      },
+      "Disclaimer (Passivo)": {
+        "Monitorar estritamente": "Embora o investidor defensivo busque o mínimo de esforço, ele deve revisar sua carteira periodicamente para garantir que os fundamentos das empresas líderes escolhidas permaneçam sólidos.",
+        "Alocação 50-50 (ativos/renda)": "Recomendação clássica de dividir o portfólio igualmente entre ações de alta qualidade e títulos de renda fixa para equilibrar risco e retorno. Graham sugere que essa proporção pode variar entre 25% e 75% dependendo das condições de mercado, mas deve ser rebalanceada anualmente.",
+        "Focar em empresas líderes": "O investidor passivo deve restringir suas compras a grandes empresas, bem estabelecidas, com histórico de lucros e finanças conservadoras."
+      }
+    },
+    "Tipos de Investidor": {
+      "Empreendedor (Ativo)": {
+        "Análise original e dedicada": "Este investidor está disposto a dedicar tempo e esforço consideráveis para realizar pesquisas profundas e independentes sobre os negócios.",
+        "Busca por barganhas": "Diferente do passivo, ele caça ativamente ações que o mercado negligenciou ou puniu injustamente, visando retornos acima da média.",
+        "Estratégias específicas": "Inclui a exploração de 'situações especiais', como arbitragens, liquidações ou empresas secundárias com potencial de valorização."
+      }
+    },
+    "Critérios de Seleção (quantitativos)": {
+      "Tamanho adequado da empresa": "Exclui pequenas empresas que podem ser excessivamente voláteis; Graham sugeria vendas anuais de pelo menos 100 milhões de dólares (ajustados para cerca de 500 milhões hoje).",
+      "Condição financeira forte (2:1 corrente)": "Os ativos circulantes devem ser o dobro do passivo circulante para garantir que a empresa sobreviva a crises de liquidez.",
+      "Estabilidade de lucros (10 anos)": "Exige que a empresa tenha apresentado lucros positivos em cada um dos últimos 10 anos, evitando negócios cíclicos ou instáveis.",
+      "Registro de dividendos (20 anos)": "Um histórico de 20 anos de pagamentos ininterruptos de dividendos sinaliza uma gestão amigável ao acionista e saúde de caixa.",
+      "Crescimento de lucros (1/3 em 10 anos)": "Requer um aumento de pelo menos 33% no lucro por ação nos últimos 10 anos, usando médias de três anos para suavizar flutuações.",
+      "P/L moderado (máx. 12x)": "O preço não deve exceder 15 vezes a média dos lucros dos últimos três anos (embora algumas simplificações modernas usem limites mais baixos para maior conservadorismo).",
+      "P/VP moderado (máx. 1.5x ou Regra 22.5)": "O preço da ação não deve ultrapassar 1,5 vezes o valor patrimonial. A Regra de 22.5 estipula que o produto de P/L por P/VP não deve exceder esse número."
+    },
+    "Estratégias Quantitativas": {
+      "Net-Net (NCAV)": {
+        "Comprar abaixo do capital circulante líquido": "Estratégia radical de comprar ações cujo preço de mercado é menor que 2/3 do valor líquido dos ativos circulantes (ativos circulantes menos todas as dívidas), valorizando ativos fixos em zero."
+      },
+      "Fórmula de Graham": {
+        "V = √(2 x 1.5 x 2c)": "Também conhecida como Número de Graham, essa fórmula simplificada ($V = \\sqrt{22.5 \\times EPS \\times BVPS}$) calcula o preço máximo que um investidor defensivo deve pagar para manter os limites de P/L de 15 e P/VP de 1,5."
+      }
+    },
+    "Psicologia e Comportamento": {
+      "Discrição emocional": "O investidor inteligente deve ter o temperamento necessário para não deixar as emoções de medo ou ganância ditarem suas decisões financeiras.",
+      "Resistência à psicologia do rebanho": "Significa manter o pensamento independente e não seguir a multidão em momentos de euforia (bolhas) ou depressão (crashes).",
+      "Paciência a longo prazo": "O valor real leva tempo para ser reconhecido pelo mercado; o investidor deve agir como dono de negócio e focar no desempenho operacional ao longo de décadas."
+    },
+    "Legados e Discípulos": {
+      "Warren Buffett (10 anos mentor)": "Buffett foi aluno de Graham na Columbia e trabalhou em sua empresa, considerando-o a maior influência em sua vida após seu próprio pai.",
+      "Security Analysis (1934)": "Considerado a 'Bíblia' da análise de investimentos, este livro técnico formalizou a disciplina de avaliar títulos com base em fundamentos.",
+      "The Intelligent Investor (1949)": "O guia definitivo para o investidor individual, focado em princípios emocionais e políticas de investimento, descrito por Buffett como o melhor livro de investimentos já escrito.",
+      "Pai da Análise Fundamentalista": "Graham revolucionou Wall Street ao substituir o palpite e a sorte por métodos matemáticos e rigorosos de avaliação de empresas."
+    }
+  }
+}
