@@ -15,7 +15,9 @@ function List({ title, items, numbered = false, onItemClick }) {
             <span className="list-item-bullet">
               {numbered ? `${index + 1}.` : "•"}
             </span>
-            <span className="list-item-text">{item.text || item}</span>
+            <span className="list-item-text">
+              {item.nome || item.text || item}
+            </span>
             <span className="list-item-icon">ℹ️</span>
           </li>
         ))}

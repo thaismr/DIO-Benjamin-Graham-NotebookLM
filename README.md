@@ -11,13 +11,11 @@
 
 ## 📚 Sobre o Projeto
 
-Este é um aplicativo web educacional focado nos princípios financeiros de **Benjamin Graham**, o lendário investidores e professor de Warren Buffett. O projeto apresenta conceitos fundamentais sobre:
+Este é um aplicativo web educacional simples, focado nos princípios financeiros de **Benjamin Graham**.
 
-- **Pobreza Silenciosa** - O fenômeno onde profissionais bem remunerados vivem em fragilidade financeira
-- **Diferença entre Renda e Riqueza** - Entendendo fluxo de entrada versus capital acumulado
-- **Inflação do Estilo de Vida** - Como o consumo excessivo compromete a liberdade financeira
-- **Ativos Produtivos** - A importância de investir em bens que geram valor
-- **Independência Financeira** - Medindo sucesso pelo tempo de autonomia, não pelo consumo
+![Tela Principal - Cards Informativos](print1.png)
+
+![Tela com Modal de Detalhes](print2.png)
 
 ---
 
@@ -54,7 +52,6 @@ npm start
 
 1. O aplicativo apresenta cards informativos sobre conceitos financeiros
 2. Clique em um card para ver mais detalhes no modal
-3. Navegue pela lista de conceitos organizados
 
 ---
 
@@ -80,7 +77,7 @@ src/
 
 Informações do Mapa Mental foram geradas utilizando os recursos do NotebookLM:
 
-🔗 [NotebookLM - Benjamin Graham](https://notebooklm.google.com/notebook/9ed0f5df-a502-4dbd-bf8f-768718056093)
+🔗 [NotebookLM - Benjamin Graham](https://notebooklm.google.com/notebook/4f993845-186f-49cf-ac42-02803cf6be83)
 
 ---
 

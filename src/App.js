@@ -15,8 +15,8 @@ function App() {
   const handleItemClick = (item) => {
     setModalData({
       isOpen: true,
-      title: item.text,
-      content: item.explanation,
+      title: item.nome,
+      content: item.descricao,
     });
   };
 
@@ -28,88 +28,41 @@ function App() {
     <div className="App">
       <header className="app-header">
         <div className="header-content">
-          <h1 className="app-title">{grahamData.title}</h1>
-          <p className="app-subtitle">
-            Benjamin Graham's Investment Philosophy
-          </p>
+          <h1 className="app-title">{grahamData.nome}</h1>
+          <p className="app-subtitle">{grahamData.descricao}</p>
         </div>
       </header>
 
       <main className="app-main">
         <div className="cards-grid">
-          {/* Princípios e Fundamentos */}
-          <Card title="Princípios e Fundamentos" icon="⚖️">
-            <div className="subsections">
-              <List
-                title="Investimento vs. Especulação"
-                items={grahamData.sections[0].subsections[0].items}
-                onItemClick={handleItemClick}
-              />
-              <List
-                title="Margem de Segurança"
-                items={grahamData.sections[0].subsections[1].items}
-                onItemClick={handleItemClick}
-              />
-              <List
-                title="Senhor Mercado"
-                items={grahamData.sections[0].subsections[2].items}
-                onItemClick={handleItemClick}
-              />
-              <List
-                title="Disclaimer (Passivo)"
-                items={grahamData.sections[0].subsections[3].items}
-                onItemClick={handleItemClick}
-              />
-            </div>
-          </Card>
-
-          {/* Tipos de Investidor */}
-          <Card title="Tipos de Investidor" icon="👤">
-            <List
-              title="Empreendedor (Ativo)"
-              items={grahamData.sections[1].subsections[0].items}
-              onItemClick={handleItemClick}
-            />
-          </Card>
-
-          {/* Critérios de Seleção */}
-          <Card title="Critérios de Seleção (quantitativos)" icon="📊">
-            <List
-              items={grahamData.sections[2].items}
-              numbered={true}
-              onItemClick={handleItemClick}
-            />
-          </Card>
-
-          {/* Estratégias Quantitativas */}
-          <Card title="Estratégias Quantitativas" icon="📈">
-            <List
-              title="Net-Net (NCAV)"
-              items={grahamData.sections[3].subsections[0].items}
-              onItemClick={handleItemClick}
-            />
-            <List
-              title="Fórmula de Graham"
-              items={grahamData.sections[3].subsections[1].items}
-              onItemClick={handleItemClick}
-            />
-          </Card>
-
-          {/* Psicologia e Comportamento */}
-          <Card title="Psicologia e Comportamento" icon="🧠">
-            <List
-              items={grahamData.sections[4].items}
-              onItemClick={handleItemClick}
-            />
-          </Card>
-
-          {/* Legados e Discípulos */}
-          <Card title="Legados e Discípulos" icon="🏆">
-            <List
-              items={grahamData.sections[5].items}
-              onItemClick={handleItemClick}
-            />
-          </Card>
+          {grahamData.children.map((section, sectionIndex) => (
+            <Card
+              key={sectionIndex}
+              title={section.nome}
+              icon={getSectionIcon(sectionIndex)}
+            >
+              {section.children.map((item, itemIndex) => (
+                <div key={itemIndex} className="subsection">
+                  {item.children && item.children.length > 0 ? (
+                    // Item with nested children
+                    <List
+                      title={item.nome}
+                      items={item.children}
+                      onItemClick={handleItemClick}
+                      numbered={false}
+                    />
+                  ) : (
+                    // Leaf item
+                    <List
+                      items={[item]}
+                      onItemClick={handleItemClick}
+                      numbered={false}
+                    />
+                  )}
+                </div>
+              ))}
+            </Card>
+          ))}
         </div>
       </main>
 
@@ -122,10 +75,19 @@ function App() {
       </Modal>
 
       <footer className="app-footer">
-        <p>Based on Benjamin Graham's teachings - The Intelligent Investor</p>
+        <p>
+          Baseado nos ensinamentos de Benjamin Graham - O Investidor Inteligente
+          | Conteúdo pesquisado com auxílio do NotebookLM
+        </p>
       </footer>
     </div>
   );
+}
+
+// Helper function to get icons for each section
+function getSectionIcon(index) {
+  const icons = ["⚖️", "👤", "📊", "📈", "🧠", "🏆"];
+  return icons[index] || "📋";
 }
 
 export default App;

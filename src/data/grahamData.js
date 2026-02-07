@@ -1,168 +1,158 @@
 // Benjamin Graham Investment Philosophy Mind Map Data
-// Based on Week 3: Value Investing Summary
+// Updated structure matching grahamData.json
 
 export const grahamData = {
-  title: "Resumo Graham: Investimento em Valor",
-  sections: [
+  nome: "Benjamin Graham e Investimento em Valor",
+  children: [
     {
-      id: "principles",
-      title: "Princípios e Fundamentos",
-      icon: "⚖️",
-      subsections: [
+      nome: "Princípios Fundamentais",
+      children: [
         {
-          id: "investment-speculation",
-          title: "Investimento vs. Especulação",
-          items: [
+          nome: "Investimento vs. Especulação",
+          children: [
             {
-              text: "Segurança do principal",
-              explanation:
-                "Um investimento real, após análise minuciosa, deve garantir que o capital inicial investido não seja perdido de forma permanente. Graham diferencia o investidor do especulador pelo foco na preservação do valor em vez da aposta em flutuações de preços.",
+              nome: "Análise profunda",
+              descricao:
+                "O investimento deve ser baseado em uma análise cuidadosa e detalhada dos fundamentos da empresa, como balanço patrimonial, demonstração de resultados, fluxo de caixa, posição competitiva e qualidade da gestão. Graham defendia que investir sem compreender profundamente o negócio é especulação.",
             },
             {
-              text: "Retorno satisfatório",
-              explanation:
-                "Diferente de buscar 'jackpots' de loteria, o investidor inteligente busca um lucro razoável e adequado com base em fatos e lógica. Graham define retorno satisfatório como aquele que o investidor está disposto a aceitar, desde que aja com inteligência e prudência.",
+              nome: "Segurança do principal",
+              descricao:
+                "O objetivo primário do investidor não é maximizar ganhos, mas preservar o capital investido. Um investimento só é válido quando oferece alta probabilidade de não resultar em perda permanente do principal.",
+            },
+            {
+              nome: "Retorno satisfatório",
+              descricao:
+                "O retorno esperado deve ser adequado ao risco assumido, sem depender de cenários excessivamente otimistas. Graham enfatizava retornos consistentes e razoáveis ao longo do tempo, em vez de ganhos extraordinários e incertos.",
             },
           ],
         },
         {
-          id: "margin-safety",
-          title: "Margem de Segurança",
-          items: [
+          nome: "Margem de Segurança",
+          children: [
             {
-              text: "Preço abaixo do valor intrínseco",
-              explanation:
-                "É o conceito de comprar um ativo por um valor significativamente menor do que seu valor real ou intrínseco para mitigar riscos de erros de cálculo ou azar. Graham descreve isso como comprar uma nota de 1 dólar por apenas 50 centavos, criando um amortecedor contra a volatilidade.",
+              nome: "Preço abaixo do valor intrínseco",
+              descricao:
+                "A margem de segurança consiste em comprar ativos por um preço significativamente inferior ao seu valor intrínseco estimado. Essa diferença protege o investidor contra erros de análise, mudanças econômicas adversas e eventos inesperados.",
             },
           ],
         },
         {
-          id: "mr-market",
-          title: "Senhor Mercado",
-          items: [
+          nome: "Senhor Mercado",
+          children: [
             {
-              text: "Aproveitar volatilidade emocional",
-              explanation:
-                "Metáfora de um sócio maníaco-depressivo que oferece preços absurdos diariamente, ora por euforia, ora por pânico. O investidor deve usar o Sr. Mercado como um servo, comprando dele quando ele está pessimista e vendendo para ele quando ele está eufórico.",
+              nome: "Aproveitar volatilidade emocional",
+              descricao:
+                "O conceito do Senhor Mercado representa o mercado como um parceiro emocionalmente instável, que diariamente oferece preços irracionais. O investidor inteligente deve ignorar o humor do mercado e aproveitar suas oscilações para comprar barato e vender caro.",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      nome: "Tipos de Investidor",
+      children: [
+        {
+          nome: "Empreendedor (Ativo)",
+          children: [
+            {
+              nome: "Análise original e dedicação",
+              descricao:
+                "O investidor empreendedor dedica tempo e esforço para realizar análises próprias, indo além do consenso do mercado. Ele busca identificar oportunidades negligenciadas ou mal precificadas.",
+            },
+            {
+              nome: "Busca por barganhas",
+              descricao:
+                "Esse perfil procura ações negociadas a preços muito abaixo de seu valor real, explorando ineficiências temporárias do mercado.",
+            },
+            {
+              nome: "Situações especiais",
+              descricao:
+                "Incluem eventos como reestruturações, spin-offs, fusões, falências ou mudanças regulatórias. Graham via nessas situações oportunidades únicas de retorno elevado, desde que analisadas com rigor.",
             },
           ],
         },
         {
-          id: "disclaimer",
-          title: "Disclaimer (Passivo)",
-          items: [
+          nome: "Defensivo (Passivo)",
+          children: [
             {
-              text: "Monitorar estritamente",
-              explanation:
-                "Embora o investidor defensivo busque o mínimo de esforço, ele deve revisar sua carteira periodicamente para garantir que os fundamentos das empresas líderes escolhidas permaneçam sólidos.",
+              nome: "Minimizar esforço e erro",
+              descricao:
+                "O investidor defensivo busca simplicidade e segurança, evitando decisões complexas. Seu foco é reduzir a chance de erros graves por meio de regras claras, diversificação e disciplina.",
             },
             {
-              text: "Alocação 50-50 (ativos/renda)",
-              explanation:
+              nome: "Alocação 50/50 (Ações/Títulos)",
+              descricao:
                 "Recomendação clássica de dividir o portfólio igualmente entre ações de alta qualidade e títulos de renda fixa para equilibrar risco e retorno. Graham sugere que essa proporção pode variar entre 25% e 75% dependendo das condições de mercado, mas deve ser rebalanceada anualmente.",
             },
             {
-              text: "Focar em empresas líderes",
-              explanation:
-                "O investidor passivo deve restringir suas compras a grandes empresas, bem estabelecidas, com histórico de lucros e finanças conservadoras.",
+              nome: "Focar em empresas líderes",
+              descricao:
+                "Empresas grandes, consolidadas e financeiramente sólidas tendem a apresentar menor risco. O investidor defensivo prioriza companhias com histórico estável, posição dominante no setor e boa governança.",
             },
           ],
         },
       ],
     },
     {
-      id: "investor-types",
-      title: "Tipos de Investidor",
-      icon: "👤",
-      subsections: [
+      nome: "Critérios de Seleção (Defensivo)",
+      children: [
         {
-          id: "entrepreneur",
-          title: "Empreendedor (Ativo)",
-          items: [
-            {
-              text: "Análise original e dedicada",
-              explanation:
-                "Este investidor está disposto a dedicar tempo e esforço consideráveis para realizar pesquisas profundas e independentes sobre os negócios.",
-            },
-            {
-              text: "Busca por barganhas",
-              explanation:
-                "Diferente do passivo, ele caça ativamente ações que o mercado negligenciou ou puniu injustamente, visando retornos acima da média.",
-            },
-            {
-              text: "Estratégias específicas",
-              explanation:
-                "Inclui a exploração de 'situações especiais', como arbitragens, liquidações ou empresas secundárias com potencial de valorização.",
-            },
-          ],
+          nome: "Tamanho adequado da empresa",
+          descricao:
+            "Empresas de grande porte oferecem maior estabilidade operacional, acesso a capital e resiliência em períodos de crise, reduzindo riscos para o investidor conservador.",
+        },
+        {
+          nome: "Condição financeira forte (2:1 corrente)",
+          descricao:
+            "A relação entre ativos circulantes e passivos circulantes deve ser de pelo menos 2 para 1, garantindo liquidez suficiente para cumprir obrigações de curto prazo.",
+        },
+        {
+          nome: "Estabilidade de lucros (10 anos)",
+          descricao:
+            "Lucros consistentes ao longo de pelo menos dez anos indicam um modelo de negócios sólido e capacidade de atravessar diferentes ciclos econômicos.",
+        },
+        {
+          nome: "Registro de dividendos (20 anos)",
+          descricao:
+            "O pagamento contínuo de dividendos por longos períodos demonstra disciplina financeira, geração de caixa consistente e compromisso com os acionistas.",
+        },
+        {
+          nome: "Crescimento de lucros (1/3 em 10 anos)",
+          descricao:
+            "Um crescimento moderado, porém constante, é preferível a expansões agressivas. Graham valorizava empresas que aumentassem seus lucros em pelo menos 33% ao longo de uma década.",
+        },
+        {
+          nome: "P/L moderado (max 15x)",
+          descricao:
+            "O índice Preço/Lucro deve permanecer em níveis razoáveis, evitando pagar caro demais por expectativas futuras. Graham considerava múltiplos elevados um risco adicional.",
+        },
+        {
+          nome: "P/VP moderado (max 1.5x ou Regra 22.5)",
+          descricao:
+            "O preço da ação não deve ultrapassar excessivamente o valor patrimonial da empresa. A Regra 22.5 combina P/L e P/VP para garantir avaliações conservadoras.",
         },
       ],
     },
     {
-      id: "selection-criteria",
-      title: "Critérios de Seleção (quantitativos)",
-      icon: "📊",
-      items: [
+      nome: "Estratégias Quantitativas",
+      children: [
         {
-          text: "Tamanho adequado da empresa",
-          explanation:
-            "Exclui pequenas empresas que podem ser excessivamente voláteis; Graham sugeria vendas anuais de pelo menos 100 milhões de dólares (ajustados para cerca de 500 milhões hoje).",
-        },
-        {
-          text: "Condição financeira forte (2:1 corrente)",
-          explanation:
-            "Os ativos circulantes devem ser o dobro do passivo circulante para garantir que a empresa sobreviva a crises de liquidez.",
-        },
-        {
-          text: "Estabilidade de lucros (10 anos)",
-          explanation:
-            "Exige que a empresa tenha apresentado lucros positivos em cada um dos últimos 10 anos, evitando negócios cíclicos ou instáveis.",
-        },
-        {
-          text: "Registro de dividendos (20 anos)",
-          explanation:
-            "Um histórico de 20 anos de pagamentos ininterruptos de dividendos sinaliza uma gestão amigável ao acionista e saúde de caixa.",
-        },
-        {
-          text: "Crescimento de lucros (1/3 em 10 anos)",
-          explanation:
-            "Requer um aumento de pelo menos 33% no lucro por ação nos últimos 10 anos, usando médias de três anos para suavizar flutuações.",
-        },
-        {
-          text: "P/L moderado (máx. 12x)",
-          explanation:
-            "O preço não deve exceder 15 vezes a média dos lucros dos últimos três anos (embora algumas simplificações modernas usem limites mais baixos para maior conservadorismo).",
-        },
-        {
-          text: "P/VP moderado (máx. 1.5x ou Regra 22.5)",
-          explanation:
-            "O preço da ação não deve ultrapassar 1,5 vezes o valor patrimonial. A Regra de 22.5 estipula que o produto de P/L por P/VP não deve exceder esse número.",
-        },
-      ],
-    },
-    {
-      id: "strategies",
-      title: "Estratégias Quantitativas",
-      icon: "📈",
-      subsections: [
-        {
-          id: "net-net",
-          title: "Net-Net (NCAV)",
-          items: [
+          nome: "Net-Net (NCAV)",
+          children: [
             {
-              text: "Comprar abaixo do capital circulante líquido",
-              explanation:
-                "Estratégia radical de comprar ações cujo preço de mercado é menor que 2/3 do valor líquido dos ativos circulantes (ativos circulantes menos todas as dívidas), valorizando ativos fixos em zero.",
+              nome: "Comprar abaixo do capital circulante liquido",
+              descricao:
+                "A estratégia Net-Net busca empresas cujo valor de mercado seja inferior ao valor de seus ativos circulantes líquidos, desconsiderando ativos fixos. Essa abordagem oferece extrema margem de segurança.",
             },
           ],
         },
         {
-          id: "formula",
-          title: "Fórmula de Graham",
-          items: [
+          nome: "Fórmula de Graham",
+          children: [
             {
-              text: "V = √(2 x 1.5 x 2c)",
-              explanation:
+              nome: "V = √(2 x 1.5 x 2c)",
+              descricao:
                 "Também conhecida como Número de Graham, essa fórmula simplificada (V = √(22.5 × EPS × BVPS) calcula o preço máximo que um investidor defensivo deve pagar para manter os limites de P/L de 15 e P/VP de 1,5.",
             },
           ],
@@ -170,51 +160,47 @@ export const grahamData = {
       ],
     },
     {
-      id: "psychology",
-      title: "Psicologia e Comportamento",
-      icon: "🧠",
-      items: [
+      nome: "Psicologia e Comportamento",
+      children: [
         {
-          text: "Discrição emocional",
-          explanation:
-            "O investidor inteligente deve ter o temperamento necessário para não deixar as emoções de medo ou ganância ditarem suas decisões financeiras.",
+          nome: "Disciplina emocional",
+          descricao:
+            "O investidor deve controlar emoções como medo e ganância, seguindo princípios racionais mesmo em momentos de euforia ou pânico do mercado.",
         },
         {
-          text: "Resistência à psicologia do rebanho",
-          explanation:
-            "Significa manter o pensamento independente e não seguir a multidão em momentos de euforia (bolhas) ou depressões (crashes).",
+          nome: "Resistência a psicologia de massas",
+          descricao:
+            "Evitar seguir a multidão é essencial. Graham alertava que decisões baseadas no comportamento coletivo frequentemente levam a erros sistemáticos.",
         },
         {
-          text: "Paciência a longo prazo",
-          explanation:
-            "O valor real leva tempo para ser reconhecido pelo mercado; o investidor deve agir como dono de negócio e focar no desempenho operacional ao longo de décadas.",
+          nome: "Paciência e foco no longo prazo",
+          descricao:
+            "Resultados consistentes exigem tempo. O investidor inteligente mantém paciência, permitindo que o valor intrínseco se reflita no preço ao longo dos anos.",
         },
       ],
     },
     {
-      id: "legacy",
-      title: "Legados e Discípulos",
-      icon: "🏆",
-      items: [
+      nome: "Legado e Discípulos",
+      children: [
         {
-          text: "Warren Buffett (10 anos mentor)",
-          explanation:
-            "Buffett foi aluno de Graham na Columbia e trabalhou em sua empresa, considerando-o a maior influência em sua vida após seu próprio pai.",
+          nome: "Warren Buffett (O maior pupilo)",
+          descricao:
+            "Buffett aplicou e expandiu os princípios de Graham, combinando margem de segurança com foco em qualidade e vantagens competitivas duráveis.",
         },
         {
-          text: "Security Analysis (1934)",
-          explanation:
-            "Considerado a 'Bíblia' da análise de investimentos, este livro técnico formalizou a disciplina de avaliar títulos com base em fundamentos.",
+          nome: "Security Analysis (1934)",
+          descricao:
+            "Obra seminal que estabeleceu as bases da análise fundamentalista, introduzindo métodos rigorosos para avaliação de ativos.",
         },
         {
-          text: "The Intelligent Investor (1949)",
-          explanation:
-            "O guia definitivo para o investidor individual, focado em princípios emocionais e políticas de investimento, descrito por Buffett como o melhor livro de investimentos já escrito.",
+          nome: "The Intelligent Investor (1949)",
+          descricao:
+            "Livro mais acessível de Graham, focado no comportamento do investidor e na aplicação prática do investimento em valor.",
         },
         {
-          text: "Pai da Análise Fundamentalista",
-          explanation:
-            "Graham revolucionou Wall Street ao substituir o palpite e a sorte por métodos matemáticos e rigorosos de avaliação de empresas.",
+          nome: "Pai da Análise Fundamentalista",
+          descricao:
+            "Benjamin Graham é reconhecido como o fundador da análise fundamentalista moderna, influenciando gerações de investidores e analistas financeiros.",
         },
       ],
     },
